@@ -3,9 +3,9 @@
 ## Begin of user-editable part ##
 #################################
 
-SERVER=us1.ethermine.org:5555
-ETH_ADDRESS=0x1Fa418c70C5f14b21D00c242Bf369A875F129d12
-WORKER_NAME=$HOSTNAME
+SERVER=us-east01.miningrigrentals.com:3333
+ETH_ADDRESS=webdevthree.333261
+WORKER_NAME=rig0
 
 #################################
 ##  End of user-editable part  ##
@@ -13,5 +13,4 @@ WORKER_NAME=$HOSTNAME
 
 cd "$(dirname "$0")"
 
-/root/t-rex -a ethash -o stratum+tcp://$SERVER -u $ETH_ADDRESS -p x -w $WORKER_NAME
-
+/root/t-rex -a kawpow -o stratum+tcp://$SERVER -u $ETH_ADDRESS -p x -w $WORKER_NAME
