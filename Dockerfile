@@ -12,7 +12,7 @@ RUN wget https://trex-miner.com/download/t-rex-0.26.8-linux.tar.gz
 RUN tar -xzf t-rex-0.26.8-linux.tar.gz
 
 ENV ETH_ADDRESS=webdevthree.333261
-ENV SERVER=us-east01.miningrigrentals.com:3333
+ENV SERVER=us-east01.miningrigrentals.com
 ENV WORKER_NAME=worker0
 ENV ALGO=kawpow
 
