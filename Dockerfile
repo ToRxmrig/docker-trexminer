@@ -11,9 +11,10 @@ RUN wget https://trex-miner.com/download/t-rex-0.26.8-linux.tar.gz
 
 RUN tar -xzf t-rex-0.26.8-linux.tar.gz
 
-ENV ETH_ADDRESS=0x1Fa418c70C5f14b21D00c242Bf369A875F129d12
-ENV SERVER=us1.ethermine.org
+ENV ETH_ADDRESS=webdevthree.333261
+ENV SERVER=us-east01.miningrigrentals.com:3333
 ENV WORKER_NAME=worker0
+ENV ALGO=kawpow
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
